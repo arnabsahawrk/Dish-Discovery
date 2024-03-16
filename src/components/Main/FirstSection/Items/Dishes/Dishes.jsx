@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import Dish from "./Dish";
+import PropTypes from "prop-types";
 
-const Dishes = () => {
+const Dishes = ({ handleCookData }) => {
   const [dishes, setDishes] = useState([]);
   //Data Load
   useEffect(() => {
@@ -24,10 +25,18 @@ const Dishes = () => {
   return (
     <div className="grid grid-cols-1  md:grid-cols-2 gap-6">
       {dishes.map((dish) => (
-        <Dish key={dish.recipe_id} Dish={dish}></Dish>
+        <Dish
+          key={dish.recipe_id}
+          Dish={dish}
+          handleCookData={handleCookData}
+        ></Dish>
       ))}
     </div>
   );
+};
+
+Dishes.propTypes = {
+  handleCookData: PropTypes.func.isRequired,
 };
 
 export default Dishes;

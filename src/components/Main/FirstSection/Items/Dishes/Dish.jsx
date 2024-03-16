@@ -2,8 +2,9 @@ import PropTypes from "prop-types";
 import { CiClock1 } from "react-icons/ci";
 import { AiOutlineFire } from "react-icons/ai";
 
-const Dish = ({ Dish }) => {
+const Dish = ({ Dish, handleCookData }) => {
   const {
+    recipe_id,
     recipe_img,
     recipe_name,
     short_description,
@@ -41,6 +42,9 @@ const Dish = ({ Dish }) => {
         </li>
       </ul>
       <button
+        onClick={() =>
+          handleCookData({ recipe_id, recipe_name, preparing_time, calories })
+        }
         type="button"
         className="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:outline-none font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2"
       >
@@ -52,6 +56,7 @@ const Dish = ({ Dish }) => {
 
 Dish.propTypes = {
   Dish: PropTypes.object.isRequired,
+  handleCookData: PropTypes.func.isRequired,
 };
 
 export default Dish;
