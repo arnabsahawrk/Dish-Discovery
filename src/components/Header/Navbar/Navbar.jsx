@@ -73,7 +73,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#"
-                className="block py-2 px-3 text-[#150B2B] rounded hover:text-[#0BE58A] lg:p-0"
+                className="block py-2 px-3 text-[#150B2B] rounded hover:text-green-600 lg:p-0"
                 aria-current="page"
               >
                 Home
@@ -82,7 +82,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#"
-                className="block py-2 px-3 text-[#150B2B] rounded hover:text-[#0BE58A]  lg:p-0"
+                className="block py-2 px-3 text-[#150B2B] rounded hover:text-green-600  lg:p-0"
               >
                 Recipes
               </a>
@@ -90,7 +90,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#"
-                className="block py-2 px-3 text-[#150B2B] rounded hover:text-[#0BE58A]  lg:p-0"
+                className="block py-2 px-3 text-[#150B2B] rounded hover:text-green-600  lg:p-0"
               >
                 About
               </a>
@@ -98,7 +98,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#"
-                className="block py-2 px-3 text-[#150B2B] rounded hover:text-[#0BE58A]  lg:p-0"
+                className="block py-2 px-3 text-[#150B2B] rounded hover:text-green-600  lg:p-0"
               >
                 Search
               </a>
